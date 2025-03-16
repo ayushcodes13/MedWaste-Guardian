@@ -1,4 +1,4 @@
-# MedWaste-Guardian
+<img width="380" alt="Screenshot 2025-03-16 at 7 40 06 PM" src="https://github.com/user-attachments/assets/dee65ed7-e671-4c2d-9dfb-f626d2aadf5c" /># MedWaste-Guardian
 in progress right now
 
 march 2025 - 
@@ -39,5 +39,13 @@ Unlike existing solutions, MedWaste Guardian **does not rely on static datasets 
 - **Bridging the black-box problem in AI** by making **classification decisions interpretable**.  
 
 ### **Conclusion**  
-MedWaste Guardian represents a **significant advancement** in **biomedical waste management** by integrating **multi-modal AI with real-time legal compliance checking**. The proposed solution enhances **waste classification accuracy, regulatory adherence, and accessibility**, offering a **scalable AI-driven compliance framework** for hospitals and healthcare facilities. Future work will focus on refining the AI agent’s **context awareness** and optimizing its **interpretability for healthcare professionals**.  
+MedWaste Guardian represents a **significant advancement** in **biomedical waste management** by integrating **multi-modal AI with real-time legal compliance checking**. The proposed solution enhances **waste classification accuracy, regulatory adherence, and accessibility**, offering a **scalable AI-driven compliance framework** for hospitals and healthcare facilities. Future work will focus on refining the AI agent’s **context awareness** and optimizing its **interpretability for healthcare professionals**.  <img width="380" alt="Screenshot 2025-03-16 at 7 40 06 PM" src="https://github.com/user-attachments/assets/a034bac1-8a1f-422f-9c4d-321e75fc6a8b" />
+
+
+
+
+
+
+
+
 
