@@ -1,4 +1,3 @@
-<img width="380" alt="Screenshot 2025-03-16 at 7 40 06 PM" src="https://github.com/user-attachments/assets/dee65ed7-e671-4c2d-9dfb-f626d2aadf5c" /># MedWaste-Guardian
 in progress right now
 
 march 2025 - 
