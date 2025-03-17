@@ -12,16 +12,7 @@ march 2025 -
 ### **Introduction to the Area**  
 Biomedical waste management is a critical aspect of healthcare operations, ensuring environmental safety and regulatory compliance. Improper disposal of medical waste poses severe risks, including the spread of infections, environmental contamination, and legal violations. Traditional waste classification and compliance methods often rely on **manual documentation and outdated regulatory frameworks**, making real-time decision-making inefficient and error-prone. Existing AI-driven solutions focus on **either text-based rule interpretation or image-based classification**, lacking a comprehensive, **multi-modal approach** that integrates **vision, voice, and text for a more interactive and context-aware system**.  
 
-Introduction to Biomedical Waste Management
-Biomedical waste includes infectious, hazardous, and general medical waste.
-Proper disposal is critical to prevent infections, environmental pollution, and legal violations.
-Compliance with national and international regulations is mandatory for healthcare facilities.
-⚠️ Issues in Biomedical Waste Compliance
-Incorrect Waste Disposal → Leads to cross-contamination and public health risks.
-Regulatory Complexity → Frequent law updates make compliance difficult.
-Lack of Automated Systems → Hospitals rely on manual processes, increasing errors.
-Limited Awareness & Training → Healthcare workers may not be well-versed in legal rules.
-Inefficient Waste Classification → Leads to mismanagement and environmental hazards.
+
 📌 Session Contents Overview
 1️⃣ Waste Classification Agent → Identifies waste type using YOLOv8.
 2️⃣ Legal Compliance Agent → Retrieves correct disposal laws via RAG + LLM.
