@@ -12,33 +12,60 @@ march 2025 -
 ### **Introduction to the Area**  
 Biomedical waste management is a critical aspect of healthcare operations, ensuring environmental safety and regulatory compliance. Improper disposal of medical waste poses severe risks, including the spread of infections, environmental contamination, and legal violations. Traditional waste classification and compliance methods often rely on **manual documentation and outdated regulatory frameworks**, making real-time decision-making inefficient and error-prone. Existing AI-driven solutions focus on **either text-based rule interpretation or image-based classification**, lacking a comprehensive, **multi-modal approach** that integrates **vision, voice, and text for a more interactive and context-aware system**.  
 
-### **Issues in Existing Research**  
-Despite advancements in AI-driven waste classification, **several research gaps persist**:  
-1. **Limited Multi-Modality** – Most existing solutions rely on either **text-based retrieval** or **image classification**, leading to misinterpretations when waste classification is ambiguous.  
-2. **Lack of Real-Time Legal Compliance Monitoring** – Static compliance models fail to adapt to **changing biomedical waste disposal regulations**, leading to unintentional non-compliance.  
-3. **Complexity & Black Box AI** – Current deep learning models lack interpretability, making it difficult for healthcare professionals to **understand AI-driven decisions**.  
+Introduction to Biomedical Waste Management
+Biomedical waste includes infectious, hazardous, and general medical waste.
+Proper disposal is critical to prevent infections, environmental pollution, and legal violations.
+Compliance with national and international regulations is mandatory for healthcare facilities.
+⚠️ Issues in Biomedical Waste Compliance
+Incorrect Waste Disposal → Leads to cross-contamination and public health risks.
+Regulatory Complexity → Frequent law updates make compliance difficult.
+Lack of Automated Systems → Hospitals rely on manual processes, increasing errors.
+Limited Awareness & Training → Healthcare workers may not be well-versed in legal rules.
+Inefficient Waste Classification → Leads to mismanagement and environmental hazards.
+📌 Session Contents Overview
+1️⃣ Waste Classification Agent → Identifies waste type using YOLOv8.
+2️⃣ Legal Compliance Agent → Retrieves correct disposal laws via RAG + LLM.
+3️⃣ STT Agent → Converts spoken queries into text for AI processing.
+4️⃣ Response Agent → Generates compliance explanations & converts them to speech.
+5️⃣ Multi-Modal Input → Supports text, voice, and image-based queries.
 
-### **Methodology & Technologies Used**  
-To address these challenges, **MedWaste Guardian** integrates:  
-- **Multi-Modal AI (Vision + Voice + Text Processing)** – Allows **healthcare workers to either speak, type, or upload an image** for waste classification, improving accessibility and accuracy.  
-- **YOLOv8 + OpenCV** – Enables **real-time waste identification** using computer vision.  
-- **Speech-to-Text (STT) & Text-to-Speech (TTS)** – Provides a **voice-enabled AI agent** for hands-free interaction.  
-- **Retrieval-Augmented Generation (RAG) with Legal Databases** – Continuously **fetches real-time biomedical waste regulations** using web scraping and API-based legal compliance monitoring.  
+🔹 Our AI-driven solution automates compliance checks, reduces human error, and enhances waste disposal efficiency in healthcare facilities.
 
-### **Solution & Research Contribution**  
-MedWaste Guardian offers a **novel AI-driven solution** by:  
-**Enhancing waste classification accuracy** using **multi-modal input validation** (cross-checking speech, text, and images).  
-**Providing real-time legal updates** through **RAG-based compliance monitoring**, ensuring hospitals follow the latest regulations.  
-**Improving AI interpretability** by making **classification decisions transparent and explainable** for hospital staff.  
 
-### **Shortcomings & Research Gaps Addressed**  
-Unlike existing solutions, MedWaste Guardian **does not rely on static datasets or outdated legal frameworks**. It tackles key research gaps by:  
-- **Eliminating misclassification errors** through **multi-modal AI validation**.  
-- **Enabling real-time legal compliance updates** rather than relying on pre-fed regulations.  
-- **Bridging the black-box problem in AI** by making **classification decisions interpretable**.  
+#### *🌍 Introduction*  
+•⁠  ⁠Biomedical waste mismanagement poses *severe health and environmental risks*.  
+•⁠  ⁠Regulations vary globally, making *manual compliance complex and error-prone*.  
+•⁠  ⁠AI-driven automation can improve *waste classification and legal adherence*.  
 
-### **Conclusion**  
-MedWaste Guardian represents a **significant advancement** in **biomedical waste management** by integrating **multi-modal AI with real-time legal compliance checking**. The proposed solution enhances **waste classification accuracy, regulatory adherence, and accessibility**, offering a **scalable AI-driven compliance framework** for hospitals and healthcare facilities. Future work will focus on refining the AI agent’s **context awareness** and optimizing its **interpretability for healthcare professionals**.  <img width="380" alt="Screenshot 2025-03-16 at 7 40 06 PM" src="https://github.com/user-attachments/assets/a034bac1-8a1f-422f-9c4d-321e75fc6a8b" />
+#### *⚠️ Issues*  
+•⁠  ⁠*Misclassification of waste* → Leads to health hazards and legal violations.  
+•⁠  ⁠*Lack of awareness* → Difficulty in following country-specific regulations.  
+•⁠  ⁠*Manual compliance checks* → Time-consuming and inefficient.  
+•⁠  ⁠*Limited accessibility* → Existing systems lack multi-modal input (text, voice, image).  
+•⁠  ⁠*Regulatory updates* → Hospitals struggle to stay updated with evolving legal standards.  
+
+#### *🛠️ Methods / Algorithms Used*  
+•⁠  ⁠*YOLOv8* → Waste classification from images.  
+•⁠  ⁠*RAG (Retrieval-Augmented Generation)* → Dynamic legal compliance retrieval.  
+•⁠  ⁠*GPT-4-Turbo* → Conversational AI for explaining regulations.  
+•⁠  ⁠*CrewAI* → Multi-agent coordination for seamless interaction.  
+•⁠  ⁠*Speech-to-Text (Vosk/Google STT) & Text-to-Speech (Google TTS)* → Voice-based queries and responses.  
+
+#### *🚀 Solution: MedWaste Guardian*  
+•⁠  ⁠*AI-powered waste classification and legal compliance verification*.  
+•⁠  ⁠*Multi-modal interaction* via text, voice, and images.  
+•⁠  ⁠*Automated regulatory alerts and real-time compliance guidance*.  
+•⁠  ⁠*Enhances efficiency and reduces non-compliance risks in healthcare*.  
+
+🔹 *MedWaste Guardian: A Multi-Agent AI System for Intelligent Biomedical Waste Compliance*.  
+
+
+
+
+
+
+
+  <img width="380" alt="Screenshot 2025-03-16 at 7 40 06 PM" src="https://github.com/user-attachments/assets/a034bac1-8a1f-422f-9c4d-321e75fc6a8b" />
 
 
 
