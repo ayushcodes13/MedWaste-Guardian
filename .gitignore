@@ -1,6 +1,4 @@
 /venv
-/dataset/train
-/dataset/test
-/dataset/valid
 .DS_Store
 /runs
+/dataset
