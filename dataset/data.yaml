@@ -1,6 +1,6 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
+train: images/train
+val: images/val
+test: images/test
 
 nc: 12
 names: ['IVtube', 'bandage', 'cotton', 'gloves', 'mask', 'medical cap', 'needle', 'scissors', 'syringe', 'test tube', 'vial', 'waste']
