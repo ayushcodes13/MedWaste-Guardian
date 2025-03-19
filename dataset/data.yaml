@@ -1,13 +1,13 @@
-train: /Users/devayushrout/Desktop/MedWaste Guardian/dataset/images/train
-val: /Users/devayushrout/Desktop/MedWaste Guardian/dataset/images/valid
-test: /Users/devayushrout/Desktop/MedWaste Guardian/dataset/images/test  
+train: ../train/images
+val: ../valid/images
+test: ../test/images
 
-nc: 21  
-names: ['Sweeping shovel', 'ampule', 'bandage', 'cork', 'cotton', 'dustbin', 'medicine box', 'medicine cover', 'medicine droper', 'medicine', 'paper', 'saline set', 'strip', 'syringe box', 'syringe cover', 'syringe', 'tissue', 'waste', 'IV-set', 'gloves_waste', 'syringe_waste']
+nc: 12
+names: ['IVtube', 'bandage', 'cotton', 'gloves', 'mask', 'medical cap', 'needle', 'scissors', 'syringe', 'test tube', 'vial', 'waste']
 
 roboflow:
-  workspace: iga
-  project: medical-waste-combined
+  workspace: medical-waste-recognition
+  project: project4-vvgs8
   version: 1
   license: CC BY 4.0
-  url: https://universe.roboflow.com/iga/medical-waste-combined/dataset/1
+  url: https://universe.roboflow.com/medical-waste-recognition/project4-vvgs8/dataset/1
