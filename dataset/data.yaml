@@ -1,6 +1,6 @@
 train: /Users/devayushrout/Desktop/MedWaste Guardian/dataset/images/train
-val: /Users/devayushrout/Desktop/MedWaste Guardian/dataset/images/val
-test: /Users/devayushrout/Desktop/MedWaste Guardian/dataset/images/test  # Optional
+val: /Users/devayushrout/Desktop/MedWaste Guardian/dataset/images/valid
+test: /Users/devayushrout/Desktop/MedWaste Guardian/dataset/images/test  
 
 nc: 21  
 names: ['Sweeping shovel', 'ampule', 'bandage', 'cork', 'cotton', 'dustbin', 'medicine box', 'medicine cover', 'medicine droper', 'medicine', 'paper', 'saline set', 'strip', 'syringe box', 'syringe cover', 'syringe', 'tissue', 'waste', 'IV-set', 'gloves_waste', 'syringe_waste']
