@@ -13,10 +13,6 @@ Traditional methods are manual, error-prone, and lack real-time decision-making.
 MedWaste Guardian is a <strong>multi-modal AI system</strong> that uses <strong>image, voice, and text</strong> inputs to intelligently classify waste, check legal compliance, and guide proper disposal.
 </p>
 
-<hr>
-
-<h3>🧩 System Flowchart</h3>
-<img src="https://your-image-host.com/path/to/flowchart.png" alt="Flowchart of MedWaste Guardian" width="100%">
 
 <!-- Replace above URL with the actual hosted image link -->
 
