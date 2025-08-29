@@ -1,8 +1,6 @@
 <h1>🧠 MedWaste Guardian</h1>
 <h2>A Multi-Modal AI System for Biomedical Waste Compliance</h2>
 
-<p><strong>Project Exhibition - March 2025</strong></p>
-
 <hr>
 
 <h3>📄 Abstract</h3>
