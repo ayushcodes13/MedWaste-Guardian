@@ -6,6 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ayushcodes13/MedWaste-Guardian"><img src="https://img.shields.io/badge/GitHub-ayushcodes13%2FMedWaste--Guardian-202b27?logo=github" alt="GitHub repository"></a>
+  <a href="https://medwaste-guardian-site.vercel.app/"><img src="https://img.shields.io/badge/Website-live%20on%20Vercel-37644f" alt="Live static website on Vercel"></a>
   <img src="https://img.shields.io/badge/Prototype-research%20only-6b806d" alt="Research prototype">
   <img src="https://img.shields.io/badge/Disposal%20advice-none-b87843" alt="No disposal advice">
 </p>
@@ -16,7 +17,9 @@
 
 ## Website
 
-**Deployment status:** A static Vercel presentation is being prepared. The deployment URL will be added here after the production route is live and its preview flow has been checked.
+**Production website:** [medwaste-guardian-site.vercel.app](https://medwaste-guardian-site.vercel.app/)
+
+**Custom domain:** `medwaste.devayushrout.me` is attached to the Vercel project but still needs DNS ownership verification at Namecheap. The `vercel.app` production URL is live while that is pending.
 
 The website is designed to explain the project honestly and provide a small, safe interaction: choose a non-sensitive PNG, JPG, or WebP image up to 8 MB and preview it in the browser. The file is not uploaded. No inference, retrieval, or disposal recommendation runs.
 
@@ -66,6 +69,8 @@ Configure the Vercel project as a static site:
 - **Install command:** none
 - **Environment variables:** none
 
+The Vercel project is named `medwaste-guardian-site`. Its production deployment is connected to the GitHub `main` branch.
+
 This publishes the presentation and browser-local preview only. It does not deploy the Flask/FastAPI services, model weights, RAG index, microphone workflow, or any medical-waste decision support.
 
 ## Experimental Python services
@@ -79,6 +84,7 @@ Do not use these services for actual waste handling. Before making them remotely
 - `node --check site/app.js` — passed.
 - Served `site/` locally with Python's static HTTP server — page loaded in Aside Browser.
 - Selected a synthetic PNG — preview rendered locally and the interface reported “no model run.”
+- Opened the Vercel production URL in Aside Browser and exercised the same synthetic PNG preview; the image loaded in-browser, no inference ran, and selecting the file created no additional network resource requests.
 - Selected a text file — the UI rejected it with a clear message.
 - Removed the preview — the UI returned to the empty state.
 - Checked the 390 px mobile layout — no horizontal overflow; mobile navigation opened, followed the Preview link, and closed.
