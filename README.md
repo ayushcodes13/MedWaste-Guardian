@@ -66,6 +66,14 @@ MedWaste Guardian is a <strong>multi-modal AI system</strong> that uses <strong>
 
 <hr>
 
+<h3>🚀 Hosting Status and Runtime Needs</h3>
+
+<p><strong>No Vercel deployment is configured.</strong> Vercel could host a static project page, but that would not run the current classification, retrieval, or speech workflow. The application imports and loads PyTorch/Transformers/SentenceTransformers and YOLO models at startup, reads the checked-in RAG index and model weights, and calls a separate FastAPI service through a localhost URL. The current setup also relies on FFmpeg for uploaded audio and uses Google speech recognition.</p>
+
+<p>For manual experimentation, run the Flask app and RAG API as separate Python processes on a local machine with the required model packages, model weights, RAG index, FFmpeg, and enough memory for model loading. The image classifier can use CPU in the current code; a suitable GPU may improve inference speed but has not been qualified here. Camera/microphone use and external speech-service behavior need to be configured and checked on the target machine.</p>
+
+<p>For a remotely accessible prototype, first make the two services independently configurable, then package them in a containerized VM or managed container runtime with model/index storage, resource limits, and explicit network/service settings. Add authentication and review the privacy and regulatory claims before exposing real biomedical-waste or facility data. A static Vercel page alone is a portfolio presentation, not a working deployment of this workflow.</p>
+
 <h3>🔮 Future Enhancements</h3>
 <ul>
   <li><strong>Compliance Alerts</strong> – Notify hospitals of regulation updates.</li>
