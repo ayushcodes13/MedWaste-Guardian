@@ -1,91 +1,89 @@
-<h1>🧠 MedWaste Guardian</h1>
-<h2>A Multi-Modal AI System for Biomedical Waste Compliance</h2>
-
-<hr>
-
-<h3>📄 Abstract</h3>
-<p>
-Biomedical waste management is a critical aspect of healthcare operations, ensuring environmental safety and regulatory compliance.
-Improper disposal of medical waste poses severe risks, including the spread of infections, environmental contamination, and legal violations.
-Traditional methods are manual, error-prone, and lack real-time decision-making. Existing AI solutions are either image- or text-based, but not fully integrated.
-MedWaste Guardian is a <strong>multi-modal AI system</strong> that uses <strong>image, voice, and text</strong> inputs to classify waste, check legal compliance, and guide proper disposal.
+<p align="center">
+  <img src="site/assets/guardian-mark.svg" width="88" height="88" alt="MedWaste Guardian project mark">
 </p>
 
-<h3>🛠️ Workflow Components</h3>
-<ol>
-  <li><strong>Waste Classification</strong> – YOLOv8 for biomedical waste image recognition.</li>
-  <li><strong>Legal Compliance Retrieval</strong> – RAG + GPT-4-Turbo for disposal laws.</li>
-  <li><strong>Speech-to-Text (STT)</strong> – Converts voice queries into text.</li>
-  <li><strong>Response Generation</strong> – GPT-4 explanation + TTS output.</li>
-  <li><strong>Multi-Modal Input</strong> – Supports text, image, and voice.</li>
-</ol>
+<h1 align="center">MedWaste Guardian</h1>
 
-<hr>
-
-<h3>🌍 Problem Statement</h3>
-<ul>
-  <li>Misclassification of waste causes health risks and legal issues.</li>
-  <li>Hospitals struggle to follow country-specific regulations.</li>
-  <li>Compliance checks are slow and manual.</li>
-  <li>Existing tools lack integrated voice/image/text support.</li>
-  <li>Hospitals miss out on frequent regulatory updates.</li>
-</ul>
-
-<hr>
-
-<h3>💡 Solution: MedWaste Guardian</h3>
-<ul>
-  <li>Multi-modal input for real-time waste analysis.</li>
-  <li>Automated waste classification using YOLOv8 + OpenCV.</li>
-  <li>Legal guideline retrieval via RAG (ChromaDB/Pinecone) + GPT-4.</li>
-  <li>Response generation with explanations + voice feedback (TTS).</li>
-  <li>Automated alerts for regulatory changes and compliance updates.</li>
-</ul>
-
-<hr>
-
-<h3>🧠 Methods & Tech Stack</h3>
-<ul>
-  <li><strong>YOLOv8</strong> – Image-based waste classification</li>
-  <li><strong>RAG (Retrieval-Augmented Generation)</strong> – Regulation fetching</li>
-  <li><strong>GPT-4-Turbo</strong> – Legal compliance explanation</li>
-  <li><strong>Vosk / Google STT</strong> – Speech-to-text</li>
-  <li><strong>Google TTS</strong> – Text-to-speech</li>
-</ul>
-
-<hr>
-
-<h3>🔁 Final Workflow Summary</h3>
-<ol>
-  <li>🧑‍⚕️ User provides input (image, voice, or text).</li>
-  <li>📸 Waste Detection identifies waste type (<strong>YOLOv8</strong>).</li>
-  <li>📚 Compliance check fetches laws (RAG + <strong>Pinecone/ChromaDB</strong>).</li>
-  <li>🧾 GPT-4 generates disposal instructions + voice output (TTS).</li>
-  <li>📱 User receives the final response in text/voice.</li>
-</ol>
-
-<hr>
-
-<h3>🚀 Hosting Status and Runtime Needs</h3>
-
-<p><strong>No Vercel deployment is configured.</strong> Vercel could host a static project page, but that would not run the current classification, retrieval, or speech workflow. The application imports and loads PyTorch/Transformers/SentenceTransformers and YOLO models at startup, reads the checked-in RAG index and model weights, and calls a separate FastAPI service through a localhost URL. The current setup also relies on FFmpeg for uploaded audio and uses Google speech recognition.</p>
-
-<p>For manual experimentation, run the Flask app and RAG API as separate Python processes on a local machine with the required model packages, model weights, RAG index, FFmpeg, and enough memory for model loading. The image classifier can use CPU in the current code; a suitable GPU may improve inference speed but has not been qualified here. Camera/microphone use and external speech-service behavior need to be configured and checked on the target machine.</p>
-
-<p>For a remotely accessible prototype, first make the two services independently configurable, then package them in a containerized VM or managed container runtime with model/index storage, resource limits, and explicit network/service settings. Add authentication and review the privacy and regulatory claims before exposing real biomedical-waste or facility data. A static Vercel page alone is a portfolio presentation, not a working deployment of this workflow.</p>
-
-<h3>🔮 Future Enhancements</h3>
-<ul>
-  <li><strong>Compliance Alerts</strong> – Notify hospitals of regulation updates.</li>
-  <li><strong>Multilingual Support</strong> – STT/TTS for multiple languages.</li>
-  <li><strong>Integration with Hospital Systems</strong> – Automated compliance record-keeping.</li>
-</ul>
-
-<hr>
-
-<h3>✅ Conclusion</h3>
-<p>
-MedWaste Guardian streamlines biomedical waste management using a structured, AI-driven workflow. It reduces human error, ensures compliance, and enhances safety across healthcare facilities.
+<p align="center">
+  <a href="https://github.com/ayushcodes13/MedWaste-Guardian"><img src="https://img.shields.io/badge/GitHub-ayushcodes13%2FMedWaste--Guardian-202b27?logo=github" alt="GitHub repository"></a>
+  <img src="https://img.shields.io/badge/Prototype-research%20only-6b806d" alt="Research prototype">
+  <img src="https://img.shields.io/badge/Disposal%20advice-none-b87843" alt="No disposal advice">
 </p>
 
-<p><strong>This unified flow ensures efficient, real-time biomedical waste management. 🚀</strong></p>
+<p align="center">A research prototype exploring biomedical-waste image screening and source-aware references, with a public static site that previews images locally and makes its limits explicit.</p>
+
+> **The website does not classify waste or provide clinical, legal, or disposal guidance.** The image model and retrieval services are not connected to the hosted site.
+
+## Website
+
+**Deployment status:** A static Vercel presentation is being prepared. The deployment URL will be added here after the production route is live and its preview flow has been checked.
+
+The website is designed to explain the project honestly and provide a small, safe interaction: choose a non-sensitive PNG, JPG, or WebP image up to 8 MB and preview it in the browser. The file is not uploaded. No inference, retrieval, or disposal recommendation runs.
+
+**Intended audience:** people reviewing the research prototype and developers exploring human-reviewed decision-support interfaces. It is not an operational hospital tool.
+
+## Screenshots
+
+| Desktop home | Browser-local image preview |
+| --- | --- |
+| ![MedWaste Guardian desktop home](site/screenshots/01-home-desktop.png) | ![Local image preview with inference explicitly disabled](site/screenshots/02-local-preview-desktop.png) |
+
+**Responsive home**
+
+![MedWaste Guardian mobile layout](site/screenshots/03-home-mobile.png)
+
+Screenshots were captured from the running site in Aside Browser using a synthetic image. They show the current static presentation, not a model result.
+
+## What this repository contains
+
+- `site/` — the static, responsive portfolio website. It needs no build step or environment variables.
+- `app.py` — an experimental Flask app with image, text-query, and speech endpoints. Startup loads a YOLO weight, a Hugging Face Llama model, and an embedding model.
+- `ragapi.py` — a separate experimental FastAPI/LlamaIndex service. It loads the local `medwaste_index/` and the same Hugging Face model family.
+- `WasteClassification/` — YOLO training and experiment artifacts; the tracked `backend/models/yolov8_medical_waste_best.pt` is the weight referenced by `app.py`.
+- `medwaste_index/` — a local LlamaIndex storage snapshot.
+- `templates/` and `Legal Compilance/` — older UI and notebook-era experiments.
+
+The Python services are not the deployment behind the website. Their full local workflow has not been verified in this completion pass. In particular, `app.py` calls the RAG API at `http://localhost:8000/query/`, model downloads may require Hugging Face access, the dependency list is broad and unpinned, and the separate `WasteClassification/yolo_api.py` contains a machine-specific path. Treat those files as research code, not a maintained service.
+
+## Run the website locally
+
+Python 3 is enough for the static site; there is no package install or build step.
+
+```bash
+python3 -m http.server 4173 --directory site
+```
+
+Open `http://localhost:4173`. The image preview runs in the browser and accepts PNG, JPEG, and WebP files up to 8 MB. It does not send them to a server.
+
+## Deploy the website on Vercel
+
+Configure the Vercel project as a static site:
+
+- **Root Directory:** `site`
+- **Framework preset:** Other
+- **Build command:** none
+- **Output directory:** `.`
+- **Install command:** none
+- **Environment variables:** none
+
+This publishes the presentation and browser-local preview only. It does not deploy the Flask/FastAPI services, model weights, RAG index, microphone workflow, or any medical-waste decision support.
+
+## Experimental Python services
+
+The repository includes a `requirements.txt`, but it is unpinned and installs a large machine-learning stack. The original application loads models during module startup, expects the local index and YOLO weight, and calls two services on localhost. The code and its dependencies have not been verified as a reproducible end-to-end workflow here; there is no supported installation guarantee yet.
+
+Do not use these services for actual waste handling. Before making them remotely accessible, the project would need a reproducible environment, configurable service URLs and model paths, validated source material, authentication, privacy review, and a trained human-review workflow.
+
+## Verification in this pass
+
+- `node --check site/app.js` — passed.
+- Served `site/` locally with Python's static HTTP server — page loaded in Aside Browser.
+- Selected a synthetic PNG — preview rendered locally and the interface reported “no model run.”
+- Selected a text file — the UI rejected it with a clear message.
+- Removed the preview — the UI returned to the empty state.
+- Checked the 390 px mobile layout — no horizontal overflow; mobile navigation opened, followed the Preview link, and closed.
+- Checked screenshots for layout and content. The tested interaction uses a synthetic image and does not validate any classifier or backend.
+
+## Privacy and safety
+
+Use only synthetic or otherwise non-sensitive sample images. The public preview creates an object URL in the current browser tab and does not upload the file. The site gives no waste classification, regulatory interpretation, or disposal instruction. Real handling decisions must follow facility procedures and applicable local requirements with trained human review.

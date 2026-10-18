@@ -1,5 +1,6 @@
 venv310/
 .DS_Store
+._*
 runs/
 Dataset/
 legalpdf/
